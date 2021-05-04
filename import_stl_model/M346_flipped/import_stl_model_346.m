@@ -13,14 +13,14 @@ MatFileName = 'leonardo_m346_3d_model.mat';
 
 % Define the list of parts which will be part of the rigid aircraft body
 %rigid_body_list   = {     'Body_m346.stl'  };
-rigid_body_list   = { 'm346_body.stl' 'Rear_canopy.stl' 'Center_canopy.stl' 'Forward_canopy.stl' 'ail_left.stl' 'ail_right.stl' 'hst_left.stl' 'hst_right.stl' 'lef_left.stl' 'lef_right.stl' 'Rudder.stl'  };
+rigid_body_list   = { 'm346_body.stl' 'Rear_canopy.stl' 'Center_canopy.stl' 'Forward_canopy.stl' 'ail_left.stl' 'ail_right.stl' 'hst_left.stl' 'hst_right.stl' 'lef_left.stl' 'lef_right.stl' 'Rudder.stl' 'ail_left.stl' 'ail_right.stl' 'tef_left.stl' 'tef_right.stl' };
 %rigid_body_list   = { 'M346_original_rotated.stl'  };
 
 
 % Define the color of each part
-rigid_body_colors = {0.8 * [1, 1, 1], 0.1 * [1, 1, 1], 0.1 * [1, 1, 1], 0.1 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1]};
+rigid_body_colors = {0.8 * [1, 1, 1], 0.1 * [1, 1, 1], 0.1 * [1, 1, 1], 0.1 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1], 0.6 * [1, 1, 1] ,0.6 * [1, 1, 1], 0.6 * [1, 1, 1] ,0.6 * [1, 1, 1]};
 % Define the transparency of each part
-alphas            = [1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9];
+alphas            = [1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9];
 % Define the model ofset to center the A/C Center of Gravity
 offset_3d_model   = [0,0,0];
 % Define the controls 
@@ -146,7 +146,7 @@ camlight('left');
  
 material('DULL');
 view([30 10])
-%zoom(0.5);
+%zoom(0.7);
 % Add a camera light, and tone down the specular highlighting
 
 
